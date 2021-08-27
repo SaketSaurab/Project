@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product1">
+    <ScrollView
+        android:id="@+id/scrollproduct1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/btnbacktohome"
+                    android:clickable="true"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Stool"
+                   android:textStyle="bold"
+                   android:textSize="20dp"
+                   android:layout_marginStart="140dp"
+                   />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:layout_marginStart="100dp"
+                    />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/heart"
+                    android:layout_marginStart="20dp"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="530dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/boyonstool" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stool"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mini White Stool "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.250"
+                android:textStyle="bold"
+                android:textSize="35sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product details: "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/solidline"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This stable, anti-slip step stool in white brings your children up a notch so they can join in and learn. It’s approved for grown-ups too, so you can safely reach for things on the top shelf."
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="10dp"
+                android:paddingBottom="100dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/solidline"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintcart"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/constraintBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="Add  to  Cart"
+            android:background="@drawable/addtocart"
+            android:textAllCaps="false"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/solidline"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintBottom"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/ivhome_btn"
+            android:contextClickable="true"
+            android:layout_marginBottom="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/home"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/ivsearch_btn"
+            android:focusable="true" />
+        <ImageView
+            android:id="@+id/ivsearch_btn"
+            android:contextClickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toRightOf="@id/ivhome_btn"
+            app:layout_constraintRight_toLeftOf="@id/ivuser_btn"/>
+        <ImageView
+            android:id="@+id/ivuser_btn"
+            android:contextClickable="true"
+            android:layout_marginBottom="50dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+
+            app:layout_constraintLeft_toRightOf="@id/ivsearch_btn"
+            app:layout_constraintRight_toLeftOf="@id/ivwishlist_btn"
+            />
+        <ImageView
+            android:id="@+id/ivwishlist_btn"
+            android:contextClickable="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/heart"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:clickable="true"
+
+            app:layout_constraintLeft_toRightOf="@id/ivuser_btn"
+            app:layout_constraintRight_toLeftOf="@id/ivcart_btn"
+            android:focusable="true" />
+        <ImageView
+            android:id="@+id/ivcart_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/cart"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintLeft_toRightOf="@id/ivwishlist_btn"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
